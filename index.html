@@ -10,8 +10,10 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1755693925711"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1755693925711">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1756890611865"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1756890611865">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1756890611865">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1756890611865">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -23,7 +25,7 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="#" class="menu__link">Services</a>
+										<a href="/services.html" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
 										<a href="#" class="menu__link">Work</a>
@@ -41,7 +43,7 @@
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1755693925711on">
+<fetch url="@components/layout/menu/menu.js?v=1756890611865on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -176,6 +178,7 @@ data-fls-marquee-speed="200"
 								<a href="#" class="item-work__picture">
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/works/03-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/works/03-1200.webp" type="image/webp">
 										<img class="item-work__image" alt="Image" src="./assets/img/works/03.webp">
 									</picture>
 								</a>
@@ -190,6 +193,7 @@ data-fls-marquee-speed="200"
 								<a href="#" class="item-work__picture">
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/works/04-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/works/04-1200.webp" type="image/webp">
 										<img class="item-work__image" alt="Image" src="./assets/img/works/04.webp">
 									</picture>
 								</a>
@@ -670,6 +674,9 @@ data-fls-marquee-speed="200"
 			</footer>
 		</div>
 		<ul id="fls-dev-panel">
+			<li>
+				<a href="services.html">services</a>
+			</li>
 			<li>
 				<a href="index.html">index</a>
 			</li>
