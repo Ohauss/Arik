@@ -10,11 +10,11 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>About</title>
-		<script type="module" crossorigin="" src="./js/about.min.js?v=1758211038777"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1758211038777">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758211038777">
-		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1758211038777">
-		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1758211038777">
+		<script type="module" crossorigin="" src="./js/about.min.js?v=1760020399017"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1760020399017">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -31,22 +31,22 @@
 										<a href="/services.html" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Work</a>
+										<a href="/work.html" class="menu__link">Work</a>
 									</li>
 									<li class="menu__item">
 										<a href="/about.html" class="menu__link menu__link--active">About</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Blog</a>
+										<a href="/blog.html" class="menu__link">Blog</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Pages</a>
+										<a href="/pages.html" class="menu__link">Pages</a>
 									</li>
 								</ul>
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1758211038777on">
+<fetch url="@components/layout/menu/menu.js?v=1760020399017on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -63,7 +63,10 @@
 					<div class="about__container">
 						<figure data-fls-dynamic=".about__header,768,1" class="about__picture">
 							<picture>
+								<source media="(max-width: 300px)" srcset="./assets/img/arik-300.webp" type="image/webp">
+								<source media="(max-width: 400px)" srcset="./assets/img/arik-400.webp" type="image/webp">
 								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
+								<source media="(max-width: 800px)" srcset="./assets/img/arik-800.webp" type="image/webp">
 								<img class="about__image" alt="Image" src="./assets/img/arik.webp">
 							</picture>
 						</figure>
@@ -107,6 +110,8 @@
 										</p>
 										<figure lass="content-about__picture">
 											<picture>
+												<source media="(max-width: 300px)" srcset="./assets/img/about/Image-300.webp" type="image/webp">
+												<source media="(max-width: 400px)" srcset="./assets/img/about/Image-400.webp" type="image/webp">
 												<source media="(max-width: 600px)" srcset="./assets/img/about/Image-600.webp" type="image/webp">
 												<img alt="Arik" class="content-about__image" src="./assets/img/about/Image.webp">
 											</picture>
@@ -242,13 +247,13 @@
 								</summary>
 								<ul class="body-footer__list">
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Work</a>
+										<a href="/work.html" class="body-footer__link">Work</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Work Single</a>
+										<a href="/singlework.html" class="body-footer__link">Work Single</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Blog</a>
+										<a href="/blog.html" class="body-footer__link">Blog</a>
 									</li>
 									<li class="body-footer__item">
 										<a href="" class="body-footer__link">Blog Post</a>
@@ -288,6 +293,12 @@
 		</div>
 		<ul id="fls-dev-panel">
 			<li>
+				<a href="work.html">work</a>
+			</li>
+			<li>
+				<a href="singlework.html">singlework</a>
+			</li>
+			<li>
 				<a href="services.html">services</a>
 			</li>
 			<li>
@@ -295,6 +306,9 @@
 			</li>
 			<li>
 				<a href="contacts.html">contacts</a>
+			</li>
+			<li>
+				<a href="blog.html">blog</a>
 			</li>
 			<li>
 				<a href="about.html">about</a>

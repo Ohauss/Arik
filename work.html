@@ -9,14 +9,11 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Contacts</title>
-		<script type="module" crossorigin="" src="./js/contacts.min.js?v=1760020399017"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1760020399017">
+		<title>Work</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1760020399017"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/title.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/label.min.css?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/work.min.css?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1760020399017">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -33,7 +30,7 @@
 										<a href="/services.html" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
-										<a href="/work.html" class="menu__link">Work</a>
+										<a href="/work.html" class="menu__link menu__link--active">Work</a>
 									</li>
 									<li class="menu__item">
 										<a href="/about.html" class="menu__link">About</a>
@@ -60,60 +57,102 @@
 					</div>
 				</div>
 			</header>
-			<main class="page page--contacts">
-				<article class="contacts">
-					<div class="contacts__container">
-						<figure class="contacts__picture">
-							<picture>
-								<source media="(max-width: 300px)" srcset="./assets/img/arik-300.webp" type="image/webp">
-								<source media="(max-width: 400px)" srcset="./assets/img/arik-400.webp" type="image/webp">
-								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
-								<source media="(max-width: 800px)" srcset="./assets/img/arik-800.webp" type="image/webp">
-								<img class="contacts__image" alt="Image" src="./assets/img/arik.webp">
-							</picture>
-						</figure>
-						<div class="contacts__body">
-							<div data-fls-border="" class="contacts__form form-contacts">
-								<div class="form-contacts__header">
-									<div data-fls-label="" class="form-contacts__label">Contact</div>
-									<h1 data-fls-title="" class="form-contacts__title">Let’s get in touch.</h1>
-								</div>
-								<form data-fls-form="ajax" data-fls-form-popap="popap" method="POST" action="/sendmail/index.php" class="form-contacts__body">
-									<div class="form-contacts__line">
-										<input data-fls-form-errtext="Name required" data-fls-input="" required type="text" placeholder="Name" name="name">
-									</div>
-									<div class="form-contacts__line">
-										<input data-fls-form-errtext="Email error" data-fls-input="" type="email" name="email" placeholder="Email" required>
-									</div>
-									<textarea data-fls-input-autoheight="" data-fls-input="" autocomplete="off" name="message" placeholder="Message" class="form-contacts__input" required></textarea>
-									<div class="form-contacts__item">
-										<button type="submit" class="form-contacts__button button button--lite">Send Message</button>
-									</div>
-								</form>
-							</div>
-							<ul data-fls-socialblocks="" class="contacts__social social-blocks">
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-inst">Instagram</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-tvitter">Twitter</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-fb">Facebook</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-bh">Behance</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-drb">Dribbble</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-ptn">Pinterest</a>
-								</li>
-							</ul>
+			<main class="page page--work">
+				<section class="page__work">
+					<div class="page__header-work work-header">
+						<div data-fls-blockheader="" class="hero-work__blockhead blockhead">
+							<h1 class="blockhead__title">Work</h1>
+							<p class="blockhead__text">
+								My latest web design projects and see how we can help bring your ideas
+          to life.
+							</p>
 						</div>
 					</div>
-				</article>
+					<div class="page__body-work body-work">
+						<div class="body-work__container">
+							<div class="body-work__works works">
+								<article data-fls-work="" class="item-work">
+									<a href="/singlework.html" class="item-work__picture">
+										<picture>
+											<source media="(max-width: 300px)" srcset="./assets/img/works/01-300.webp" type="image/webp">
+											<source media="(max-width: 400px)" srcset="./assets/img/works/01-400.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/works/01-600.webp" type="image/webp">
+											<source media="(max-width: 800px)" srcset="./assets/img/works/01-800.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/01-1200.webp" type="image/webp">
+											<source media="(max-width: 1400px)" srcset="./assets/img/works/01-1400.webp" type="image/webp">
+											<source media="(max-width: 1600px)" srcset="./assets/img/works/01-1600.webp" type="image/webp">
+											<img class="item-work__image" alt="Image" src="./assets/img/works/01.webp">
+										</picture>
+									</a>
+									<div class="item-work__body">
+										<h5 class="item-work__name">
+											<a href="/singlework.html" class="item-work__link-name">Space</a>
+										</h5>
+										<a href="NaN" class="item-work__category">Webdesign</a>
+									</div>
+								</article>
+								<article data-fls-work="" class="item-work">
+									<a href="#" class="item-work__picture">
+										<picture>
+											<source media="(max-width: 300px)" srcset="./assets/img/works/02-300.webp" type="image/webp">
+											<source media="(max-width: 400px)" srcset="./assets/img/works/02-400.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/works/02-600.webp" type="image/webp">
+											<source media="(max-width: 800px)" srcset="./assets/img/works/02-800.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/02-1200.webp" type="image/webp">
+											<img class="item-work__image" alt="Image" src="./assets/img/works/02.webp">
+										</picture>
+									</a>
+									<div class="item-work__body">
+										<h5 class="item-work__name">
+											<a href="#" class="item-work__link-name">Nova</a>
+										</h5>
+										<a href="NaN" class="item-work__category">Webdesign</a>
+									</div>
+								</article>
+								<article data-fls-work="" class="item-work">
+									<a href="#" class="item-work__picture">
+										<picture>
+											<source media="(max-width: 300px)" srcset="./assets/img/works/03-300.webp" type="image/webp">
+											<source media="(max-width: 400px)" srcset="./assets/img/works/03-400.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/works/03-600.webp" type="image/webp">
+											<source media="(max-width: 800px)" srcset="./assets/img/works/03-800.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/03-1200.webp" type="image/webp">
+											<source media="(max-width: 1400px)" srcset="./assets/img/works/03-1400.webp" type="image/webp">
+											<source media="(max-width: 1600px)" srcset="./assets/img/works/03-1600.webp" type="image/webp">
+											<img class="item-work__image" alt="Image" src="./assets/img/works/03.webp">
+										</picture>
+									</a>
+									<div class="item-work__body">
+										<h5 class="item-work__name">
+											<a href="#" class="item-work__link-name">Sonic</a>
+										</h5>
+										<a href="NaN" class="item-work__category">Webdesign</a>
+									</div>
+								</article>
+								<article data-fls-work="" class="item-work">
+									<a href="#" class="item-work__picture">
+										<picture>
+											<source media="(max-width: 300px)" srcset="./assets/img/works/04-300.webp" type="image/webp">
+											<source media="(max-width: 400px)" srcset="./assets/img/works/04-400.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/works/04-600.webp" type="image/webp">
+											<source media="(max-width: 800px)" srcset="./assets/img/works/04-800.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/04-1200.webp" type="image/webp">
+											<source media="(max-width: 1400px)" srcset="./assets/img/works/04-1400.webp" type="image/webp">
+											<source media="(max-width: 1600px)" srcset="./assets/img/works/04-1600.webp" type="image/webp">
+											<img class="item-work__image" alt="Image" src="./assets/img/works/04.webp">
+										</picture>
+									</a>
+									<div class="item-work__body">
+										<h5 class="item-work__name">
+											<a href="#" class="item-work__link-name">Solar</a>
+										</h5>
+										<a href="NaN" class="item-work__category">Webdesign</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<aside data-fls-letstalk="" class="lets-talk">
 				<div data-fls-border="" data-fls-marquee="" data-fls-marquee-speed="100" class="lets-talk__line line-talk">
@@ -233,19 +272,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
-		<div data-fls-popup="popup" aria-hidden="true" class="popup">
-			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body">
-					<button data-fls-popup-close="" type="button" class="popup__close">
-						<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
-							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
-						</svg>
-					</button>
-					<div data-fls-popup-content="" class="popup__text">message send</div>
-				</div>
-			</div>
 		</div>
 		<ul id="fls-dev-panel">
 			<li>

@@ -9,14 +9,11 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Contacts</title>
-		<script type="module" crossorigin="" src="./js/contacts.min.js?v=1760020399017"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1760020399017">
+		<title>Blog</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1760020399017"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1760020399017">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1760020399017">
 		<link rel="stylesheet" crossorigin="" href="./css/title.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1760020399017">
-		<link rel="stylesheet" crossorigin="" href="./css/label.min.css?v=1760020399017">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -39,7 +36,7 @@
 										<a href="/about.html" class="menu__link">About</a>
 									</li>
 									<li class="menu__item">
-										<a href="/blog.html" class="menu__link">Blog</a>
+										<a href="/blog.html" class="menu__link menu__link--active">Blog</a>
 									</li>
 									<li class="menu__item">
 										<a href="/pages.html" class="menu__link">Pages</a>
@@ -60,60 +57,158 @@
 					</div>
 				</div>
 			</header>
-			<main class="page page--contacts">
-				<article class="contacts">
-					<div class="contacts__container">
-						<figure class="contacts__picture">
-							<picture>
-								<source media="(max-width: 300px)" srcset="./assets/img/arik-300.webp" type="image/webp">
-								<source media="(max-width: 400px)" srcset="./assets/img/arik-400.webp" type="image/webp">
-								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
-								<source media="(max-width: 800px)" srcset="./assets/img/arik-800.webp" type="image/webp">
-								<img class="contacts__image" alt="Image" src="./assets/img/arik.webp">
-							</picture>
-						</figure>
-						<div class="contacts__body">
-							<div data-fls-border="" class="contacts__form form-contacts">
-								<div class="form-contacts__header">
-									<div data-fls-label="" class="form-contacts__label">Contact</div>
-									<h1 data-fls-title="" class="form-contacts__title">Let’s get in touch.</h1>
-								</div>
-								<form data-fls-form="ajax" data-fls-form-popap="popap" method="POST" action="/sendmail/index.php" class="form-contacts__body">
-									<div class="form-contacts__line">
-										<input data-fls-form-errtext="Name required" data-fls-input="" required type="text" placeholder="Name" name="name">
-									</div>
-									<div class="form-contacts__line">
-										<input data-fls-form-errtext="Email error" data-fls-input="" type="email" name="email" placeholder="Email" required>
-									</div>
-									<textarea data-fls-input-autoheight="" data-fls-input="" autocomplete="off" name="message" placeholder="Message" class="form-contacts__input" required></textarea>
-									<div class="form-contacts__item">
-										<button type="submit" class="form-contacts__button button button--lite">Send Message</button>
-									</div>
-								</form>
+			<main class="page page--blog blog">
+				<section class="blog__hero hero-blog">
+					<div class="hero-blog__container">
+						<div data-fls-blockheader="" class="hero-blog__blockhead blockhead">
+							<h1 class="blockhead__title">Blog</h1>
+							<div class="blockhead__text">
+								<p>Where ideas take shape, pixels speak, and creativity leads the way.</p>
 							</div>
-							<ul data-fls-socialblocks="" class="contacts__social social-blocks">
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-inst">Instagram</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-tvitter">Twitter</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-fb">Facebook</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-bh">Behance</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-drb">Dribbble</a>
-								</li>
-								<li class="social-blocks__item">
-									<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-ptn">Pinterest</a>
-								</li>
-							</ul>
 						</div>
 					</div>
-				</article>
+				</section>
+				<section class="blog__body body-blog">
+					<div class="body-blog__container">
+						<div class="body-blog__items">
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-1-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-1-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-1.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23 08 2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">How to Build a Stunning Website with Framer</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											Learn how to create an impressive website using Framer with our
+                step-by-step guide.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-2-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-2-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-2.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23 08 2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">10 website elements for maximum user engagement</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											10 website elements to engage users, from intuitive navigation
+                to compelling visuals.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-3-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-3-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-3.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23 08 2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">The importance of content in driving website trafficr</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											Quality content is king. Learn how to create valuable,
+                SEO-optimized content.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-4-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-4-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-4.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23 08 2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">10 common web development mistakes to avoid</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											10 common web development mistakes and improve your site's
+                functionality and user experience.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-5-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-5-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-5.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23 08 2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">Why responsive web design is critical for your business</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											Responsive web design ensures your site looks great and performs
+                well on all devices.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
+									<picture>
+										<source media="(max-width: 300px)" srcset="./assets/img/blog/blog-6-300.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/blog/blog-6-400.webp" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/blog-6.webp">
+									</picture>
+								</a>
+								<div class="item-blog__body">
+									<time datetime="23-08-2023" class="item-blog__date">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">
+											The art of SEO writing: How to write content that ranks on
+                Google
+										</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											Optimize your website with expert tips on writing content that
+                ranks high on Google.
+										</p>
+									</div>
+								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
+							</article>
+						</div>
+					</div>
+				</section>
 			</main>
 			<aside data-fls-letstalk="" class="lets-talk">
 				<div data-fls-border="" data-fls-marquee="" data-fls-marquee-speed="100" class="lets-talk__line line-talk">
@@ -233,19 +328,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
-		<div data-fls-popup="popup" aria-hidden="true" class="popup">
-			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body">
-					<button data-fls-popup-close="" type="button" class="popup__close">
-						<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
-							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
-						</svg>
-					</button>
-					<div data-fls-popup-content="" class="popup__text">message send</div>
-				</div>
-			</div>
 		</div>
 		<ul id="fls-dev-panel">
 			<li>
