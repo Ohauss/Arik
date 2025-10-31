@@ -35,6 +35,31 @@
     fetch(link.href, fetchOpts);
   }
 })();
+const isMobile = { Android: function() {
+  return navigator.userAgent.match(/Android/i);
+}, BlackBerry: function() {
+  return navigator.userAgent.match(/BlackBerry/i);
+}, iOS: function() {
+  return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+}, Opera: function() {
+  return navigator.userAgent.match(/Opera Mini/i);
+}, Windows: function() {
+  return navigator.userAgent.match(/IEMobile/i);
+}, any: function() {
+  return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+} };
+function addTouchAttr() {
+  if (isMobile.any()) document.documentElement.setAttribute("data-fls-touch", "");
+}
+function addLoadedAttr() {
+  if (!document.documentElement.hasAttribute("data-fls-preloader-loading")) {
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.documentElement.setAttribute("data-fls-loaded", "");
+      }, 0);
+    });
+  }
+}
 function getHash() {
   if (location.hash) {
     return location.hash.replace("#", "");
@@ -364,15 +389,21 @@ function pageNavigation() {
       const entry = e.detail.entry;
       const targetElement = entry.target;
       if (targetElement.dataset.flsWatcher === "navigator") {
-        document.querySelector(`[data-fls-scrollto].--navigator-active`);
+        document.querySelector(
+          `[data-fls-scrollto].--navigator-active`
+        );
         let navigatorCurrentItem;
         if (targetElement.id && document.querySelector(`[data-fls-scrollto="#${targetElement.id}"]`)) {
-          navigatorCurrentItem = document.querySelector(`[data-fls-scrollto="#${targetElement.id}"]`);
+          navigatorCurrentItem = document.querySelector(
+            `[data-fls-scrollto="#${targetElement.id}"]`
+          );
         } else if (targetElement.classList.length) {
           for (let index = 0; index < targetElement.classList.length; index++) {
             const element = targetElement.classList[index];
             if (document.querySelector(`[data-fls-scrollto=".${element}"]`)) {
-              navigatorCurrentItem = document.querySelector(`[data-fls-scrollto=".${element}"]`);
+              navigatorCurrentItem = document.querySelector(
+                `[data-fls-scrollto=".${element}"]`
+              );
               break;
             }
           }
@@ -594,6 +625,8 @@ const marquee = () => {
   });
 };
 marquee();
+addTouchAttr();
+addLoadedAttr();
 export {
   slideDown as a,
   bodyLockStatus as b,

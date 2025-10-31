@@ -10,11 +10,14 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1760021902802"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1760021902802">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1760021902802">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1760021902802">
-		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1760021902802">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1761904624939"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1761904624939">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1761904624939">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1761904624939">
+		<link rel="stylesheet" crossorigin="" href="./css/watcher.min.css?v=1761904624939">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1761904624939">
+		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1761904624939">
+		<link rel="stylesheet" crossorigin="" href="./css/widgetheader.min.css?v=1761904624939">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -44,7 +47,7 @@
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1760021902802on">
+<fetch url="@components/layout/menu/menu.js?v=1761904624939on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -88,7 +91,7 @@
 data-fls-marquee
 data-fls-marquee-speed="200"
 -->
-					<ul class="clients__container">
+					<ul data-fls-watcher="" class="clients__container">
 						<li class="clients__item">
 							<img src="./assets/img/clients/01.svg" alt="Image">
 						</li>
@@ -142,12 +145,12 @@ data-fls-marquee-speed="200"
 				</div>
 				<section class="page__selected-work selected-work">
 					<div class="selected-work__container">
-						<div class="selected-work__header">
-							<h2 class="selected-work__title">
+						<div data-fls-widgetheader="" class="selected-work__widgetheader widgetheader">
+							<h2 class="widgetheader__title">
 								Selected
 								<span>Work</span>
 							</h2>
-							<a href="#" data-fls-button="" class="button button--text text-button--icon-arrow text-button--icon-arrow-ru">Button text</a>
+							<a href="#" data-fls-button="" class="widgetheader__button button button--text text-button--icon-arrow text-button--icon-arrow-ru">Button text</a>
 						</div>
 						<div class="selected-work__items works">
 							<article data-fls-work="" class="item-work">
@@ -711,10 +714,16 @@ data-fls-marquee-speed="200"
 				<a href="services.html">services</a>
 			</li>
 			<li>
+				<a href="pricing.html">pricing</a>
+			</li>
+			<li>
 				<a href="index.html">index</a>
 			</li>
 			<li>
 				<a href="contacts.html">contacts</a>
+			</li>
+			<li>
+				<a href="blogpage.html">blogpage</a>
 			</li>
 			<li>
 				<a href="blog.html">blog</a>
