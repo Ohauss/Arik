@@ -1,4 +1,5 @@
 import { b as bodyLockStatus, c as bodyLock, e as bodyUnlock, f as gotoBlock } from "./app.min.js";
+import "./parallax.min.js";
 /* empty css          */
 /* empty css                 */
 /* empty css          */
@@ -468,11 +469,13 @@ function formInit() {
       }
     }
     function formSent(form, responseResult = ``) {
-      document.dispatchEvent(new CustomEvent("formSent", {
-        detail: {
-          form
-        }
-      }));
+      document.dispatchEvent(
+        new CustomEvent("formSent", {
+          detail: {
+            form
+          }
+        })
+      );
       setTimeout(() => {
         if (window.flsPopup) {
           const popup = form.dataset.flsFormPopup;

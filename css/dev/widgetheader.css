@@ -5,6 +5,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 0.9375rem;
+  translate: 0 20%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.widgetheader.--watcher-view {
+  translate: 0 0;
+  opacity: 1;
 }
 .widgetheader__title {
   font-family: "Satoshi", sans-serif;

@@ -5,8 +5,35 @@
 }
 .body-blog__items {
   display: grid;
-  gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(min(23.125rem, 100%), 1fr));
+  gap: 2rem;
+}
+.body-blog__item {
+  translate: 0 20%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.body-blog__item:nth-child(1) {
+  transition-delay: 0s;
+}
+.body-blog__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.body-blog__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.body-blog__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.body-blog__item:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.body-blog__item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.body-blog__item.--watcher-view {
+  translate: 0 0;
+  opacity: 1;
 }
 
 .item-blog {
@@ -15,30 +42,30 @@
   gap: 2rem;
 }
 .item-blog__link-image {
-  aspect-ratio: 416/270;
-  border-radius: 0.125rem;
-  border: 0.0625rem solid rgba(218, 197, 167, 0.15);
   position: relative;
+  border: 0.0625rem solid rgba(218, 197, 167, 0.15);
+  border-radius: 0.125rem;
+  aspect-ratio: 416/270;
 }
 .item-blog__link-image::before {
-  transform: scale(0);
-  transition: transform 0.3s;
-  content: "\f113";
-  font-family: "iconfont";
+  display: flex;
   position: absolute;
-  rotate: 45deg;
-  color: #dac5a7;
-  border: 0.0625rem solid rgba(218, 197, 167, 0.15);
-  background-color: rgba(218, 197, 167, 0.05);
   top: 50%;
   left: 50%;
-  border-radius: 50%;
-  width: 2.875rem;
-  aspect-ratio: 1;
-  translate: -50% -50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  translate: -50% -50%;
+  rotate: 45deg;
+  transition: transform 0.3s;
+  border: 0.0625rem solid rgba(218, 197, 167, 0.15);
+  border-radius: 50%;
+  background-color: rgba(218, 197, 167, 0.05);
+  aspect-ratio: 1;
+  width: 2.875rem;
+  content: "\f113";
+  color: #dac5a7;
+  font-family: "iconfont";
 }
 .item-blog__image {
   width: 100%;
@@ -47,25 +74,25 @@
 }
 .item-blog__body {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 0.5rem;
-  flex-grow: 1;
 }
 .item-blog__date {
-  text-transform: uppercase;
   font-size: 0.75rem;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 .item-blog__text {
   line-height: 1.8;
 }
 .item-blog__category {
   align-self: flex-start;
-  text-transform: uppercase;
+  transition: all 0.3s;
+  padding: 0.5rem;
   font-size: 0.75rem;
   line-height: 1.2;
-  padding: 0.5rem;
-  transition: all 0.3s;
+  text-transform: uppercase;
 }
 @media (max-width: 20em) {
   .blog {

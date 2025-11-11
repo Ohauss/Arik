@@ -10,15 +10,18 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>About</title>
-		<script type="module" crossorigin="" src="./js/about.min.js?v=1761904624939"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1761904624939">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1761904624939">
-		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1761904624939">
-		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1761904624939">
+		<script type="module" crossorigin="" src="./js/about.min.js?v=1762864608926"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1762864608926">
+		<link rel="modulepreload" crossorigin="" href="./js/parallax.min.js?v=1762864608926">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1762864608926">
+		<link rel="stylesheet" crossorigin="" href="./css/parallax.min.css?v=1762864608926">
+		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1762864608926">
+		<link rel="stylesheet" crossorigin="" href="./css/socialblocks.min.css?v=1762864608926">
+		<link rel="stylesheet" crossorigin="" href="./css/noise.min.css?v=1762864608926">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="1000" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
 					<div class="header__body">
 						<a href="index.html" class="header__link-logo">
@@ -46,12 +49,12 @@
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1761904624939on">
+<fetch url="@components/layout/menu/menu.js?v=1762864608926on">
 <each loop='item in response'>
 </each>
 </fetch>
 -->
-						<a href="#" data-fls-button="" class="header__button button button--lite">Let’s talk</a>
+						<a href="/contacts" data-fls-button="" class="header__button button button--lite">Let’s talk</a>
 						<button type="button" data-fls-menu="" class="icon-menu">
 							<span></span>
 						</button>
@@ -61,13 +64,13 @@
 			<main class="page page--about">
 				<article class="about">
 					<div class="about__container">
-						<figure data-fls-dynamic=".about__header,768,1" class="about__picture">
+						<figure data-fls-parallax-parent="" data-fls-dynamic=".about__header,768,1" class="about__picture">
 							<picture>
 								<source media="(max-width: 300px)" srcset="./assets/img/arik-300.webp" type="image/webp">
 								<source media="(max-width: 400px)" srcset="./assets/img/arik-400.webp" type="image/webp">
 								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
 								<source media="(max-width: 800px)" srcset="./assets/img/arik-800.webp" type="image/webp">
-								<img class="about__image" alt="Image" src="./assets/img/arik.webp">
+								<img data-fls-parallax="" class="about__image" alt="Image" src="./assets/img/arik.webp">
 							</picture>
 						</figure>
 						<div class="about__body">
@@ -88,9 +91,9 @@
 							</div>
 							<div class="about__main">
 								<section data-fls-border="" class="about__content content-about">
-									<div class="content-about__label">Arik Andersson</div>
-									<h2 class="content-about__title">Your Partner in Bringing Your Web Design Vision to Life</h2>
-									<div class="content-about__text">
+									<div data-fls-watcher="" data-fls-watcher-once="" class="content-about__label">Arik Andersson</div>
+									<h2 data-fls-watcher="" data-fls-watcher-once="" class="content-about__title">Your Partner in Bringing Your Web Design Vision to Life</h2>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="content-about__text">
 										<p>
 											As a freelance web designer and developer, I bring a unique
                 combination of creativity and technical expertise to every
@@ -108,7 +111,7 @@
                 and technologies, I am confident in my ability to deliver
                 exceptional results that exceed my clients' expectations.
 										</p>
-										<figure lass="content-about__picture">
+										<figure data-fls-noise="" class="content-about__picture">
 											<picture>
 												<source media="(max-width: 300px)" srcset="./assets/img/about/Image-300.webp" type="image/webp">
 												<source media="(max-width: 400px)" srcset="./assets/img/about/Image-400.webp" type="image/webp">
@@ -119,49 +122,49 @@
 									</div>
 								</section>
 								<ul data-fls-socialblocks="" class="about__social social-blocks">
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-inst">Instagram</a>
 									</li>
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-tvitter">Twitter</a>
 									</li>
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-fb">Facebook</a>
 									</li>
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-bh">Behance</a>
 									</li>
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-drb">Dribbble</a>
 									</li>
-									<li class="social-blocks__item">
+									<li data-fls-watcher="" data-fls-watcher-once="" class="social-blocks__item">
 										<a href="#" target="blank" data-fls-border="" class="social-blocks__link social-blocks__item--icon-s-ptn">Pinterest</a>
 									</li>
 								</ul>
 								<section data-fls-border="" class="about__awards awards-about">
-									<div class="awards-about__title">Awards</div>
+									<div data-fls-watcher="" data-fls-watcher-once="" class="awards-about__title">Awards</div>
 									<table class="awards-about__table">
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">Awwwards SOTD</td>
 											<td class="awards-about__value">2023</td>
 										</tr>
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">CSSDA SOTD</td>
 											<td class="awards-about__value">2023</td>
 										</tr>
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">Awwwards Website of the Month</td>
 											<td class="awards-about__value">2023</td>
 										</tr>
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">CSSDA SOTD</td>
 											<td class="awards-about__value">2022</td>
 										</tr>
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">Awwwards SOTD</td>
 											<td class="awards-about__value">2022</td>
 										</tr>
-										<tr class="awards-about__line">
+										<tr data-fls-watcher="" data-fls-watcher-once="" class="awards-about__line">
 											<td class="awards-about__label">Awwwards Website of the Year</td>
 											<td class="awards-about__value">2021</td>
 										</tr>
@@ -180,18 +183,20 @@
 				<section class="lets-talk__body">
 					<div class="lets-talk__container">
 						<div data-fls-blockheader="" class="blockhead">
-							<span class="blockhead__label">Project in mind?</span>
-							<h1 class="blockhead__title">
+							<span data-fls-watcher="" data-fls-watcher-once="" class="blockhead__label">Project in mind?</span>
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title">
 								Let’s make your
 								<span>Website shine</span>
 							</h1>
-							<div class="blockhead__text">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text">
 								<p>
 									Premium web design, webflow, and SEO services to help your business
             stand out.
 								</p>
 							</div>
-							<a href="#" data-fls-button="" class="blockhead__button button button--lite button--icon button--icon-arrow-ru">Button</a>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__footer">
+								<a href="/contacts" data-fls-button="" class="blockhead__button button button--lite button--icon button--icon-arrow-ru">Get in touch</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -237,7 +242,7 @@
 										<a href="contacts.html" class="body-footer__link">Contact</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="#" data-fls-button="" class="button button--icon button--lite button--icon-arrow-ru">More Templates</a>
+										<a href="/work" data-fls-button="" class="button button--icon button--lite button--icon-arrow-ru">More Templates</a>
 									</li>
 								</ul>
 							</details>
@@ -256,7 +261,7 @@
 										<a href="/blog.html" class="body-footer__link">Blog</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Blog Post</a>
+										<a href="/blogpage" class="body-footer__link">Blog Post</a>
 									</li>
 								</ul>
 							</details>
@@ -266,19 +271,19 @@
 								</summary>
 								<ul class="body-footer__list">
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">404 Error Page</a>
+										<a href="#" class="body-footer__link">404 Error Page</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Password Protected</a>
+										<a href="#" class="body-footer__link">Password Protected</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Styleguide</a>
+										<a href="#" class="body-footer__link">Styleguide</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Licensing</a>
+										<a href="#" class="body-footer__link">Licensing</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="" class="body-footer__link">Changelog</a>
+										<a href="#" class="body-footer__link">Changelog</a>
 									</li>
 								</ul>
 							</details>
@@ -291,71 +296,5 @@
 				</div>
 			</footer>
 		</div>
-		<ul id="fls-dev-panel">
-			<li>
-				<a href="work.html">work</a>
-			</li>
-			<li>
-				<a href="singlework.html">singlework</a>
-			</li>
-			<li>
-				<a href="services.html">services</a>
-			</li>
-			<li>
-				<a href="pricing.html">pricing</a>
-			</li>
-			<li>
-				<a href="index.html">index</a>
-			</li>
-			<li>
-				<a href="contacts.html">contacts</a>
-			</li>
-			<li>
-				<a href="blogpage.html">blogpage</a>
-			</li>
-			<li>
-				<a href="blog.html">blog</a>
-			</li>
-			<li>
-				<a href="about.html">about</a>
-			</li>
-		</ul>
-		<style>
-			#fls-dev-panel{
-				position: fixed;
-				left: 10px;
-				padding: 15px 25px 15px 15px;
-				border-radius: 0 10px 10px 0;
-				top: 10%;
-				color: #ffffff;
-				background-color: rgba(51, 51, 51, 0.5);
-				transform: translate(-100%, 0px);
-				max-height: 80svh;
-				overflow: auto;
-				transition: all 300ms;
-				z-index: 9999;
-				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-			}
-			#fls-dev-panel li{
-				list-style:none;
-			}
-			#fls-dev-panel hr{
-				border-bottom: 1px solid;
-			}
-			#fls-dev-panel:hover{
-				left: 0px;
-				transform: translate(0, 0);
-			}
-			#fls-dev-panel a{
-				text-decoration: none;
-				color: inherit;
-			}
-			#fls-dev-panel a:hover {
-				text-decoration: underline;
-			}
-			#fls-dev-panel li:not(:last-child) {
-				margin-bottom: 10px;
-			}
-		</style>
 	</body>
 </html>

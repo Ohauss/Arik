@@ -1,5 +1,7 @@
 import "./app.min.js";
+import "./parallax.min.js";
 /* empty css                 */
+/* empty css          */
 class DynamicAdapt {
   constructor() {
     this.type = "max";
