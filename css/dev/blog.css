@@ -107,7 +107,7 @@
   .item-blog {
     padding: 1.25rem;
   }
-  .item-blog__title {
+  .item-blog h4 {
     font-size: 1.25rem;
   }
 }
@@ -124,7 +124,7 @@
   .item-blog {
     padding: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 3rem );
   }
-  .item-blog__title {
+  .item-blog h4 {
     font-size: clamp( 1.25rem , 1.177927927925rem  +  0.3603603604vw , 1.5rem );
   }
 }
@@ -141,7 +141,7 @@
   .item-blog {
     padding: 3rem;
   }
-  .item-blog__title {
+  .item-blog h4 {
     font-size: 1.5rem;
   }
 }
