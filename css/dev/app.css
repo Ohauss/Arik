@@ -570,6 +570,7 @@ html:not([data-fls-touch]) .social__link:hover::before {
 .lets-talk {
   background-color: rgba(218, 197, 167, 0.05);
 }
+
 .line-talk__item {
   font-size: 0.8125rem;
   font-family: "Satoshi", sans-serif;

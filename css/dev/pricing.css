@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr));
 }
+
 .item-pricing {
   position: relative;
   display: flex;
