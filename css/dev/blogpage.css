@@ -276,7 +276,7 @@ html:not([data-fls-touch]) a.information-blogpage__value:hover {
   .articlepreview {
     padding: 1.25rem;
   }
-  .articlepreview__title {
+  .articlepreview h4 {
     font-size: 1.25rem;
   }
   .blogpage {
@@ -327,7 +327,7 @@ html:not([data-fls-touch]) a.information-blogpage__value:hover {
   .articlepreview {
     padding: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 3rem );
   }
-  .articlepreview__title {
+  .articlepreview h4 {
     font-size: clamp( 1.25rem , 1.177927927925rem  +  0.3603603604vw , 1.5rem );
   }
   .blogpage {
@@ -378,7 +378,7 @@ html:not([data-fls-touch]) a.information-blogpage__value:hover {
   .articlepreview {
     padding: 3rem;
   }
-  .articlepreview__title {
+  .articlepreview h4 {
     font-size: 1.5rem;
   }
   .blogpage {
